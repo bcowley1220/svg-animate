@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redHalfCircle {
+    /* transition: 1s ease; */
+    transform-origin: 22% 38%;
+    transform-style: preserve-3D;
+    animation: spin 8s cubic-bezier(.39, .39, .52, .51) 1;
+}
+
+.greyHalfCircle {
+    /* transition: 1s linear; */
+    transform-origin: 22% 38%;
+    transform-style: preserve-3D;
+    animation: spin 8s cubic-bezier(.39, .39, .52, .51) 1;
+    animation-direction: reverse;
+}
+  
+  /* @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
+  @keyframes spin {
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+  }
